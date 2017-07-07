@@ -1,0 +1,40 @@
+.input-group {
+    margin: 20px 0px;
+}
+
+th:not(:first-of-type), td:not(:first-of-type) {
+
+    text-align: center !important;
+}
+
+.belowChart {
+    font-weight: bold;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 85%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+@media(max-width:767px){
+    th {
+       height: 75px;
+    }
+}
+
+@media(max-width:465px){
+    th, td {
+       font-size: 0.8em;
+    }
+}
