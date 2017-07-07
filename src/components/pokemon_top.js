@@ -27,7 +27,7 @@ class PokemonTop extends Component {
     componentDidMount() {
         
         
-        let url = "http://pokeapi.co/api/v2/pokemon/?limit=10";
+        let url = "https://pokeapi.co/api/v2/pokemon/?limit=10";
 
         axios.get(url).then((response) => {
 
@@ -45,7 +45,7 @@ class PokemonTop extends Component {
     
     loadMore() {
 
-        let url = `http://pokeapi.co/api/v2/pokemon/?limit=10&offset=${this.state.offset}`
+        let url = `https://pokeapi.co/api/v2/pokemon/?limit=10&offset=${this.state.offset}`
 
         this.setState((prevState) => {
 
